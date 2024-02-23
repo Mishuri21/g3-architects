@@ -41,7 +41,7 @@ ul {
 
 ul li {
     list-style: none;
-    margin-left: 25px;
+    margin-right: 25px;
     color: rgb(66, 66, 66);
     font-size: 1rem;
     font-weight: 500;
@@ -81,4 +81,28 @@ ul li a {
 .banner img {
     width: 100%;
     margin-top: 30px;
+}
+
+/* respondive styles */
+@media screen and (max-width: 576px){
+    nav{
+        flex-direction: column;
+    }
+    ul::first-child{
+        margin-left: 0px;
+    }
+    header{
+        padding: 25px;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 30px;
+    }
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
 }
